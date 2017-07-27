@@ -17,9 +17,9 @@ class SkillVC: UIViewController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .light
+        return .lightContent
     }
-
+    
     /*
     // MARK: - Navigation
 
