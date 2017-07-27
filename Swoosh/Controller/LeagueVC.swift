@@ -14,6 +14,9 @@ class LeagueVC: UIViewController {
     var player: Player!
     
     @IBOutlet weak var nextBtn: BorderButton!
+    @IBOutlet weak var mensBtn: UIButton!
+    @IBOutlet weak var womensBtn: UIButton!
+    @IBOutlet weak var coedButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,7 @@ class LeagueVC: UIViewController {
     
     @IBAction func onWomensTapped(_ sender: Any) {
         selectLeague(leagueType: "womens")
+        
     }
     
     @IBAction func onCoedTapped(_ sender: Any) {
@@ -46,6 +50,26 @@ class LeagueVC: UIViewController {
     func selectLeague(leagueType: String) {
         player.desiredLeage = leagueType
         nextBtn.isEnabled = true
+        
+        if leagueType == "mens" {
+            mensBtn.layer.borderWidth = 2.0
+            mensBtn.layer.borderColor = UIColor.white.cgColor
+            
+            womensBtn.layer.borderWidth = 0
+            coedButton.layer.borderWidth = 0
+        } else if leagueType ==t "womens" {
+            womensBtn.layer.borderWidth = 2.0
+            womensBtn.layer.borderColor = UIColor.white.cgColor
+            
+            mensBtn.layer.borderWidth = 0
+            coedButton.layer.borderWidth = 0
+        } else {
+            coedButton.layer.borderWidth = 2.0
+            coedButton.layer.borderColor = UIColor.white.cgColor
+            
+            mensBtn.layer.borderWidth = 0
+            womensBtn.layer.borderWidth = 0
+        }
     }
     
     /*

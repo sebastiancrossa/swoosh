@@ -111,7 +111,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="RVO-cS-1Jn">
                                 <rect key="frame" x="21" y="176" width="332" height="200"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1za-Hq-o8q" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1za-Hq-o8q">
                                         <rect key="frame" x="0.0" y="0.0" width="332" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50365981540000004" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -125,7 +125,7 @@
                                             <action selector="onMensTapped:" destination="Tzx-5f-f8k" eventType="touchUpInside" id="eel-kS-ArQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfx-Fb-Men" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfx-Fb-Men">
                                         <rect key="frame" x="0.0" y="75" width="332" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50365981540000004" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -139,7 +139,7 @@
                                             <action selector="onWomensTapped:" destination="Tzx-5f-f8k" eventType="touchUpInside" id="hGK-Zb-1Ol"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iae-OW-eiq" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iae-OW-eiq">
                                         <rect key="frame" x="0.0" y="150" width="332" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50365981540000004" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -224,7 +224,10 @@
                         <viewLayoutGuide key="safeArea" id="48g-0n-huI"/>
                     </view>
                     <connections>
+                        <outlet property="coedButton" destination="iae-OW-eiq" id="j6w-3c-1fo"/>
+                        <outlet property="mensBtn" destination="1za-Hq-o8q" id="hH5-v1-UjW"/>
                         <outlet property="nextBtn" destination="mwA-CI-wDE" id="4iD-nf-Apc"/>
+                        <outlet property="womensBtn" destination="pfx-Fb-Men" id="KVe-mK-M8A"/>
                         <segue destination="jCM-9k-qlI" kind="show" identifier="skillVCSegue" id="Q52-wM-F6Q"/>
                     </connections>
                 </viewController>
