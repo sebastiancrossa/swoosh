@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="nfG-qf-ejB">
             <objects>
-                <viewController id="Tzx-5f-f8k" sceneMemberID="viewController">
+                <viewController id="Tzx-5f-f8k" customClass="LeagueVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="eVb-b9-f2f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="848.79999999999995" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="yqE-oP-qfx">
             <objects>
-                <viewController id="jCM-9k-qlI" sceneMemberID="viewController">
+                <viewController id="jCM-9k-qlI" customClass="SkillVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="DEG-M1-nnX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
