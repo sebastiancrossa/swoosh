@@ -46,7 +46,7 @@ class LeagueVC: UIViewController {
         return .lightContent
     }
     
-    // Used for the above
+    // Logic behind selection of league
     func selectLeague(leagueType: String) {
         player.desiredLeage = leagueType
         nextBtn.isEnabled = true
@@ -57,7 +57,7 @@ class LeagueVC: UIViewController {
             
             womensBtn.layer.borderWidth = 0
             coedButton.layer.borderWidth = 0
-        } else if leagueType ==t "womens" {
+        } else if leagueType == "womens" {
             womensBtn.layer.borderWidth = 2.0
             womensBtn.layer.borderColor = UIColor.white.cgColor
             
@@ -72,14 +72,12 @@ class LeagueVC: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Will let us pass data through view controllers
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = player
+        }
     }
-    */
-
+    
+    
 }
