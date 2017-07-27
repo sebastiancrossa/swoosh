@@ -16,15 +16,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Centers the swoosh logo and positions it where we want it to be
-        swoosh.frame = CGRect(x: view.frame.size.width / 2 - swoosh.frame.size.width / 2, y: 10, width: swoosh.frame.size.width, height: swoosh.frame.size.height)
-        
-        // Image will always cover the view
-        bgImg.frame = view.frame
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    
 }
