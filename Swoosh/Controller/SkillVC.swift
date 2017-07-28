@@ -12,6 +12,10 @@ class SkillVC: UIViewController {
     
     var player: Player!
     
+    @IBOutlet weak var finishButton: UIButton!
+    @IBOutlet weak var beginnerBtn: UIButton!
+    @IBOutlet weak var ballerBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,14 +26,36 @@ class SkillVC: UIViewController {
         return .lightContent
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onBeginnerTapped(_ sender: Any) {
+        selectedSkill(selectedSkillLevel: "beginner")
     }
-    */
-
+    
+    @IBAction func onBallerTapped(_ sender: Any) {
+        selectedSkill(selectedSkillLevel: "baller")
+    }
+    
+    func selectedSkill(selectedSkillLevel: String) {
+        player.selectedSkillLevel = selectedSkillLevel
+        finishButton.isEnabled = true
+        
+        if selectedSkillLevel == "beginner" {
+            beginnerBtn.layer.borderWidth = 2.0
+            beginnerBtn.layer.borderColor = UIColor.white.cgColor
+            
+            finishButton.layer.borderWidth = 2.0
+            finishButton.layer.borderColor = UIColor.white.cgColor
+            
+            ballerBtn.layer.borderWidth = 0
+        } else if selectedSkillLevel == "baller" {
+            ballerBtn.layer.borderWidth = 2.0
+            ballerBtn.layer.borderColor = UIColor.white.cgColor
+            
+            finishButton.layer.borderWidth = 2.0
+            finishButton.layer.borderColor = UIColor.white.cgColor
+            
+            beginnerBtn.layer.borderWidth = 0
+        }
+        
+    }
+    
 }

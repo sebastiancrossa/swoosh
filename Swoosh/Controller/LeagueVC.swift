@@ -55,17 +55,26 @@ class LeagueVC: UIViewController {
             mensBtn.layer.borderWidth = 2.0
             mensBtn.layer.borderColor = UIColor.white.cgColor
             
+            nextBtn.layer.borderWidth = 2.0
+            nextBtn.layer.borderColor = UIColor.white.cgColor
+            
             womensBtn.layer.borderWidth = 0
             coedButton.layer.borderWidth = 0
         } else if leagueType == "womens" {
             womensBtn.layer.borderWidth = 2.0
             womensBtn.layer.borderColor = UIColor.white.cgColor
             
+            nextBtn.layer.borderWidth = 2.0
+            nextBtn.layer.borderColor = UIColor.white.cgColor
+            
             mensBtn.layer.borderWidth = 0
             coedButton.layer.borderWidth = 0
         } else {
             coedButton.layer.borderWidth = 2.0
             coedButton.layer.borderColor = UIColor.white.cgColor
+            
+            nextBtn.layer.borderWidth = 2.0
+            nextBtn.layer.borderColor = UIColor.white.cgColor
             
             mensBtn.layer.borderWidth = 0
             womensBtn.layer.borderWidth = 0
